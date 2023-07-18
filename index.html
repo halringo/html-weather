@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link href="./style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<title>天気</title>
+</head>
+<body>
+<div class="background">
+  <div class="container">
+    <div id="observation-point-name">府中</div>
+    <div class="temperature">
+      <span id="temperature-value">--.-</span> <span class="temperature-unit">℃</span>
+    </div>
+    <div class="item">
+      <div class="item-title">降水量</div>
+      <div class="item-list">
+        <div class="item-list-column">過去10分</div>
+        <div class="item-list-column"><span id="precipitation-10m-value">--.-</span> <span class="precipitation-unit">mm</span></div>
+      </div>
+      <div class="item-list">
+        <div class="item-list-column">過去1時間</div>
+        <div class="item-list-column"><span id="precipitation-1h-value">--.-</span> <span class="precipitation-unit">mm</span></div>
+      </div>
+      <div class="item-list">
+        <div class="item-list-column">過去3時間</div>
+        <div class="item-list-column"><span id="precipitation-3h-value">--.-</span> <span class="precipitation-unit">mm</span></div>
+      </div>
+      <div class="item-list">
+        <div class="item-list-column">過去24時間</div>
+        <div class="item-list-column"><span id="precipitation-24h-value">--.-</span> <span class="precipitation-unit">mm</span></div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-title">日照時間(推計)</div>
+      <div class="item-list">
+        <div class="item-list-column">過去10分</div>
+        <div class="item-list-column"><span id="sun-10m-value">--</span> <span class="sun-unit">分</span></div>
+      </div>
+      <div class="item-list">
+        <div class="item-list-column">過去1時間</div>
+        <div class="item-list-column"><span id="sun-1h-value">-.-</span> <span class="sun-unit">時間</span></div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-title">風</div>
+      <div class="item-list">
+        <div class="item-list-column"><span id="wind-direction-value">南南西</span></div>
+        <div class="item-list-column"><span id="wind-value">--.-</span> <span class="wind-unit">m/s</span></div>
+      </div>
+    </div>
+    <div class="latest-time"><span id="latest-time-value">----/--/-- --:--</span> 発表</div>
+  </div>
+</div>
+<script src="./amedas.js"></script>
+</body>
+</html>
