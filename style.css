@@ -1,0 +1,75 @@
+body {
+  font-family: 'BIZ UDPGothic', sans-serif;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background: linear-gradient(rgb(0, 115, 255), rgb(196, 224, 255));
+  height: 100vh;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#observation-point-name {
+  color: #fff;
+  font-size: 24px;
+  margin: 40px 0 0;
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.temperature {
+  color: #fff;
+  margin: 16px 0;
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+#temperature-value {
+  font-size: 64px;
+}
+
+.temperature-unit {
+  font-size: 48px;
+}
+
+.item {
+  background-color: rgba(160, 160, 160, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  margin: 16px 0 0;
+  padding: 16px;
+  width: 80vw;
+}
+
+.item-title {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.item-list {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.item-list:last-child {
+  padding-bottom: 0;
+}
+
+.latest-time {
+  color: #fff;
+  font-size: 16px;
+  margin: 16px 0 0;
+  /* text-decoration: underline dashed; */
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
